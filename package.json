@@ -1,0 +1,16 @@
+{
+  "name": "qaautotest",
+  "version": "1.0.0",
+  "description": "Build an automated Playwright testing dashboard that runs scheduled tests, stores results, and visualizes them in a web UI.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "test:playwright": "cd tests && npx playwright test"
+  },
+  "author": "Nathan Treadaway",
+  "license": "MIT"
+}

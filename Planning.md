@@ -6,14 +6,14 @@
 
 ## 🧱 Project Setup
 
-- [ ] Create new repo: `qaautotester`
-- [ ] Add folders:
-  - [ ] `/tests` → Playwright test files
-  - [ ] `/server` → Express/Fastify backend API
-  - [ ] `/client` → Next.js dashboard
-- [ ] Initialize npm in `/server` and `/tests`
-- [ ] Create `.gitignore`, `README.md`, and MIT `LICENSE`
-- [ ] Add ESLint + Prettier for formatting
+- [x] Create new repo: `qaautotester`
+- [x] Add folders:
+  - [x] `/tests` → Playwright test files
+  - [x] `/server` → Express/Fastify backend API
+  - [x] `/client` → Next.js dashboard
+- [x] Initialize npm in `/server` and `/tests`
+- [x] Create `.gitignore`, `README.md`, and MIT `LICENSE`
+- [x] Add ESLint + Prettier for formatting
 
 ---
 
@@ -23,7 +23,7 @@
 
 ### 🧠 Phase 1 — Playwright Setup
 
-- [ ] Install Playwright: `npm install -D @playwright/test`
+- [x] Install Playwright: `npm install -D @playwright/test`
 - [ ] Add example test (`tests/homepage.spec.js`)
 - [ ] Confirm tests run with:
   ```bash

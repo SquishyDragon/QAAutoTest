@@ -34,24 +34,24 @@
 ### 💾 Phase 2 — Database Setup
 
 - [x] Install SQLite (dev) and PostgreSQL (prod)
-- [ ] Create results table [id, name, status, duration, timestamp]
-- [ ] connect DB in the backend `/server/db.js`
-- [ ] test simple CRUD insert/read functions
+- [x] Create results table [id, name, status, duration, timestamp]
+- [x] connect DB in the backend `/server/db.js`
+- [x] test simple CRUD insert/read functions
 
 ### 🔗 Phase 3 — API Routes
 
-- [ ] Create Express server
-- [ ] add endpoints `
-  - [ ] `GET /results` -> reurn all results
-  - [ ] `POST /results` -> saves new results
-- [ ] Parse Playwright JSON results and send via API
-- [ ] Test routes with Postman
+- [x] Create Express server
+- [x] add endpoints `
+  - [x] `GET /results` -> reurn all results
+  - [x] `POST /results` -> saves new results
+- [x] Parse Playwright JSON results and send via API
+- [x] Test routes with Postman
 
 ### 🎯 Week 1 Deliverables
 
-- [ ] CLI command runs Playwright tests and saves results to DB
-- [ ] API serves test data locally
-- [ ] Committed schema + working backend
+- [x] CLI command runs Playwright tests and saves results to DB
+- [x] API serves test data locally
+- [x] Committed schema + working backend
 - [ ] README updated with progress
 
 ---

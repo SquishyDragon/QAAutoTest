@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "test": "ts-node src/runTests.ts"
+    "start": "node src/index.js",
+    "test": "node src/runTests.js"
   },
   "author": "Nathan Treadaway",
   "license": "ISC",

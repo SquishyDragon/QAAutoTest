@@ -4,9 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "start": "ts-node src/index.ts",
+    "test": "ts-node src/runTests.ts"
   },
-  "author": "",
+  "author": "Nathan Treadaway",
   "license": "ISC",
   "description": "",
   "dependencies": {

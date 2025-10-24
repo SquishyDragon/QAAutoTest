@@ -62,21 +62,21 @@
 
 ## 🧠 Phase 1 — Frontend Dashboard Setup
 
-- [ ] Create Next.js app in `/client`
-- [ ] Install TailwindCSS and Recharts
-- [ ] Create pages/components:
-  - [ ] `<SummaryCard />` → shows total tests & pass rate
-  - [ ] `<ResultsTable />` → displays sortable log of test results
-  - [ ] `<TrendChart />` → line chart for tests over time
-- [ ] Fetch data from API (`/results`) using `fetch` or `axios`
-- [ ] Style dashboard with Tailwind for responsive layout
-- [ ] Test locally using mock data
+- [x] Create Next.js app in `/client`
+- [x] Install TailwindCSS and Recharts
+- [x] Create pages/components:
+  - [x] `<SummaryCard />` → shows total tests & pass rate
+  - [x] `<ResultsTable />` → displays sortable log of test results
+  - [x] `<TrendChart />` → line chart for tests over time
+- [x] Fetch data from API (`/results`) using `fetch` or `axios`
+- [x] Style dashboard with Tailwind for responsive layout
+- [x] Test locally using mock data
 
 ---
 
 ## ⚙️ Phase 2 — CI/CD Automation
 
-- [ ] Create `.github/workflows/run-tests.yml`
+- [x] Create `.github/workflows/run-tests.yml`
 - [ ] Add nightly cron job:
   ```yaml
   on:

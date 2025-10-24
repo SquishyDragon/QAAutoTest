@@ -22,7 +22,7 @@ type Props = {
 
 export default function TrendChart({ data }: Props) {
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm">
+    <div className="bg-white rounded-2xl p-8 shadow-md w-[90%] max-w-6xl mx-auto h-[70vh] overflow-auto">
       <h2 className="text-xl font-semibold mb-4">Results Over Time</h2>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={data}>

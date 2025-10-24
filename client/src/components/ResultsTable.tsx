@@ -21,7 +21,7 @@ export default function ResultsTable({ results }: Props) {
   });
 
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm">
+    <div className="bg-white rounded-2xl p-8 shadow-md w-[90%] max-w-6xl mx-auto h-[80vh] overflow-auto">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Recent Test Results</h2>
         <select

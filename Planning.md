@@ -24,16 +24,16 @@
 ### 🧠 Phase 1 — Playwright Setup
 
 - [x] Install Playwright: `npm install -D @playwright/test`
-- [ ] Add example test (`tests/homepage.spec.js`)
-- [ ] Confirm tests run with:
+- [x] Add example test (`tests/homepage.spec.js`)
+- [x] Confirm tests run with:
   ```bash
   npx playwright test
   ```
-- [ ] Generate JSON Report `npx playwright test --reporter=json > results.json`
+- [x] Generate JSON Report `npx playwright test --reporter=json > results.json`
 
 ### 💾 Phase 2 — Database Setup
 
-- [ ] Install SQLite (dev) and PostgreSQL (prod)
+- [x] Install SQLite (dev) and PostgreSQL (prod)
 - [ ] Create results table [id, name, status, duration, timestamp]
 - [ ] connect DB in the backend `/server/db.js`
 - [ ] test simple CRUD insert/read functions

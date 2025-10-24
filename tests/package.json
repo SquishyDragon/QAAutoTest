@@ -2,7 +2,12 @@
   "name": "tests",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "type": "module",
+  "scripts": {
+    "test:run": "npx playwright test --reporter=json > results.json",
+    "test:save": "node scripts/parseResults.js",
+    "test:full": "npm run test:run && npm run test:save"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -10,5 +15,8 @@
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.9.1"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
   }
 }

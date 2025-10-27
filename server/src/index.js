@@ -22,7 +22,8 @@ const pool = new Pool({
 });
 // GET results
 app.get("/results", async (req, res) => {
-  const result = await pool.query("SELECT * FROM results ORDER BY id DESC");
+  const result = await pool.query("SELECT * FROM results");
+  console.log(result);
   res.json(result.rows);
 });
 

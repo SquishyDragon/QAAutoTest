@@ -1,7 +1,7 @@
 import { TestResult } from "@/app/page";
 
 export async function fetchResults() {
-  const res = await fetch("http://localhost:3000/resutls", {
+  const res = await fetch("https://qaautotest.onrender.com/results", {
     cache: "no-store", // always fetch fresh data
   });
 

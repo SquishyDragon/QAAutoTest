@@ -5,7 +5,7 @@ import { fetchResults } from "@/lib/api";
 
 export default async function Home() {
   const results = await fetchResults();
-  console.log(results);
+
   const trend = results.map((item: any) => ({
     date: item.timestamp,
     passed: item.status === "passed" ? 1 : 0,

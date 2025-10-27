@@ -9,5 +9,6 @@ export async function fetchResults() {
     throw new Error("Failed to fetch test results");
   }
   const data = await res.json();
+  console.log(data);
   return data as Promise<TestResult[]>;
 }

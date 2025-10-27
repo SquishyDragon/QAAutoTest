@@ -1,5 +1,4 @@
 import { chromium } from "playwright";
-// import fetch from "node-fetch";
 import dotenv from "dotenv";
 
 dotenv.config({ path: "../.env" });
@@ -19,6 +18,16 @@ async function runTests() {
       },
     },
     // Add more tests as needed
+    {
+      name: "Get Started Link",
+      fn: async () => {
+        await page.goto("https://playwright.dev/");
+        await page.getByRole("link", { name: "Get started" }).click();
+        const heading = page.getByRole("heading", { name: "Installation" });
+        if (!heading.includes("Installation"))
+          throw new Error("Heading not displayed");
+      },
+    },
   ];
 
   const results = [];
@@ -39,14 +48,13 @@ async function runTests() {
       timestamp: new Date().toISOString(),
     });
   }
-  console.log(process.env.API_URL);
 
   // Post results to backend
   for (const result of results) {
     await fetch(`${process.env.API_URL}/results`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(result), 
+      body: JSON.stringify(result),
     });
   }
 

@@ -95,10 +95,10 @@
 
 ## ☁️ Phase 3 — Deployment
 
-- [ ] Deploy backend API to **Render**
+- [x] Deploy backend API to **Render**
 - [ ] Deploy frontend dashboard to **Vercel**
-- [ ] Update frontend API URL to deployed endpoint
-- [ ] Confirm dashboard loads live test results correctly
+- [x] Update frontend API URL to deployed endpoint
+- [x] Confirm dashboard loads live test results correctly
 - [ ] Record a 2-minute Loom video walkthrough
 - [ ] Update README with live links, screenshots, and description
 

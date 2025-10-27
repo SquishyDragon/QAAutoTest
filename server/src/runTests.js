@@ -1,8 +1,8 @@
 import { chromium } from "playwright";
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 import dotenv from "dotenv";
 
-dotenv.config({ path: ".env.production" });
+dotenv.config({ path: "../.env" });
 
 async function runTests() {
   const browser = await chromium.launch();
@@ -39,13 +39,14 @@ async function runTests() {
       timestamp: new Date().toISOString(),
     });
   }
+  console.log(process.env.API_URL);
 
   // Post results to backend
   for (const result of results) {
     await fetch(`${process.env.API_URL}/results`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(result),
+      body: JSON.stringify(result), 
     });
   }
 
